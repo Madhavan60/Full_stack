@@ -1,0 +1,52 @@
+/* Whole page background and center alignment */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Login container */
+.login-box {
+  background-color: #333;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+}
+
+/* Logo */
+.login-box img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box h1 {
+  color: white;
+  margin-bottom: 10px;
+}
