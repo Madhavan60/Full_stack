@@ -1,0 +1,80 @@
+use kec
+switched to db kec
+db.createCollection("User")
+{ ok: 1 }
+db.User.insertOne()
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.insertOne)
+db.User.insertOne({
+name : "Madhavan",
+email : "madhavank.23eie@kongu.edu",
+age : "20",
+dep : "EIE"
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a278185f391de95e89719')
+}
+db.user.insertMany({name : "Madhavan",email : "madhavank.23eie@kongu.edu", age : "20", dep : "EIE"})
+MongoInvalidArgumentError: Argument "docs" must be an array of documents
+db.user.insertOne({name : "Madhavan",email : "madhavank.23eie@kongu.edu", age : "20", dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a2e0f85f391de95e8971a')
+}
+db.User.insertOne({name : "Sharan",email : "sharanravi.23eie@kongu.edu", age : "25", dep : "CSE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a2f1585f391de95e8971b')
+}
+db.User.insertOne({name : "Jothi",email : "jothibabu.23eie@kongu.edu", age : "70", dep : "FANCY"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a2fd585f391de95e8971c')
+}
+db.User.insertOne({name : "Stalin",email : "stalin.23eie@dmk.edu", age : "78", dep : "POLITICS"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a301485f391de95e8971d')
+}
+db.User.insertOne({name : "Nallasivan",email : "nallasivam.18eie@kongu.edu", age : "55", dep : "Boiler"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a304b85f391de95e8971e')
+}
+db.User.insertOne({
+name : "Mahibalan",
+email : "mahibalan.23eie@kongu.edu",
+age : "20",
+dep : "EIE"
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a39a985f391de95e8971f')
+}
+db.User.insertOne({
+name : "Harsh",
+email : "harsh.23eie@kongu.edu",
+age : "20",
+dep : "EIE"
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a3c3485f391de95e89720')
+}
+db.User.insertOne({
+name : "Stalin.A",
+email : "stalina@gmail.com",
+age : "25",
+dep : "DCH"
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a3cc685f391de95e89721')
+}
+kec
+db.User.insertOne({
+name : "Stalin.A",
+email : "stalina@gmail.com",
+age : "25",
+dep : "DCH"
+})
